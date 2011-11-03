@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version 5th edition
 Name:		texlive-intro-scientific
-Version:	5th edition
+Version:	5
 Release:	1
 Summary:	Introducing scientific/mathematical documents using LaTeX
 Group:		Publishing
