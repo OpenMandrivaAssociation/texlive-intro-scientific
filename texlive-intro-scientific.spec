@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/intro-scientific
+# catalog-date 2009-02-22 10:18:48 +0100
+# catalog-license lppl
+# catalog-version 5th edition
 Name:		texlive-intro-scientific
-Version:	5
+Version:	5th edition
 Release:	1
 Summary:	Introducing scientific/mathematical documents using LaTeX
 Group:		Publishing
@@ -28,6 +34,7 @@ and BibTeX.
 %doc %{_texmfdistdir}/doc/latex/intro-scientific/earth-moon.pdf
 %doc %{_texmfdistdir}/doc/latex/intro-scientific/scidoc.pdf
 %doc %{_texmfdistdir}/doc/latex/intro-scientific/scidoc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -38,3 +45,5 @@ and BibTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
