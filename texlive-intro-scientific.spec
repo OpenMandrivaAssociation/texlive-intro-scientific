@@ -15,7 +15,7 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 
