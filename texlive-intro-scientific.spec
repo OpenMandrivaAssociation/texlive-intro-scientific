@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 "Writing Scientific Documents Using LaTeX" is an article
@@ -34,7 +32,6 @@ and BibTeX.
 %doc %{_texmfdistdir}/doc/latex/intro-scientific/earth-moon.pdf
 %doc %{_texmfdistdir}/doc/latex/intro-scientific/scidoc.pdf
 %doc %{_texmfdistdir}/doc/latex/intro-scientific/scidoc.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,5 +42,3 @@ and BibTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
