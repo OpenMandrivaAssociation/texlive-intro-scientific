@@ -6,7 +6,7 @@
 # catalog-version 5th edition
 Name:		texlive-intro-scientific
 Version:	5th
-Release:	1
+Release:	2
 Summary:	Introducing scientific/mathematical documents using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/intro-scientific
