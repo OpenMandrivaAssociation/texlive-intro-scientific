@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/intro-scientific
-# catalog-date 2009-02-22 10:18:48 +0100
-# catalog-license lppl
-# catalog-version 5th edition
 Name:		texlive-intro-scientific
-Version:	5th
-Release:	2
+Version:	15878
+Release:	1
 Summary:	Introducing scientific/mathematical documents using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/intro-scientific
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -35,25 +29,10 @@ and BibTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 5-2
-+ Revision: 752801
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 5-1
-+ Revision: 718727
-- texlive-intro-scientific
-- texlive-intro-scientific
-- texlive-intro-scientific
-- texlive-intro-scientific
-- texlive-intro-scientific
-
