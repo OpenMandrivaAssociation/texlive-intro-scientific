@@ -1,6 +1,6 @@
 Name:		texlive-intro-scientific
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Introducing scientific/mathematical documents using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/intro-scientific
