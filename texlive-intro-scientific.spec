@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Introducing scientific/mathematical documents using LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/intro-scientific
+URL:		https://www.ctan.org/tex-archive/info/intro-scientific
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/intro-scientific.doc.r%{version}.tar.xz
